@@ -1,0 +1,29 @@
+{
+  "name": "h56-github-scrapper",
+  "version": "1.0.8",
+  "description": "GitHub user scraper",
+  "type": "module",
+  "main": "main-scrapping.cjs",
+  "exports": {
+    ".": {
+      "import": "./main-scrapping.js",
+      "require": "./main-scrapping.cjs"
+    },
+    "./package.json": "./package.json"
+  },
+  "bin": {
+    "h56-github-scrapper": "main-scrapping.js"
+  },
+  "keywords": ["github", "scraper", "scraping"],
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.0.0",
+    "cheerio": "^1.0.0-rc.12",
+    "ora": "^6.0.0",
+    "yargs": "^17.0.0",
+    "h56-translator": "^1.0.6"
+  },
+  "optionalDependencies": {
+    "h56-translator": "^1.0.0"
+  }
+}
